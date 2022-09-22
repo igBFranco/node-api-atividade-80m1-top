@@ -22,12 +22,13 @@ class plateRepository {
         let plate = await firestore.collection('plates');
         let res = await plate.get();
         const plateArray = [];
-        res.forEach(doc => {
+        res.forEach( doc => {
             const plate = new Plate(
-                doc.id,
+                //doc.id,
                 doc.data().description,
                 doc.data().name,
                 doc.data().price,
+                doc.data().restaurant.name,
                 doc.data().tag,
             );
             plateArray.push(plate);
