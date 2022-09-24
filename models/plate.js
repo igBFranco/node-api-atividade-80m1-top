@@ -1,5 +1,6 @@
 class Plate {
-    constructor(description, name, price, restaurant, tag) {
+    constructor(id, description, name, price, restaurant, tag) {
+        this.id = id,
         this.description = description,
         this.name = name,
         this.price = price,

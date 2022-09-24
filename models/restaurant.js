@@ -1,5 +1,6 @@
 class Restaurant {
-    constructor(address, city, description, name, state, tag, zipcode) {
+    constructor(id, address, city, description, name, state, tag, zipcode) {
+        this.id = id,
         this.address = address,
         this.city = city,
         this.description = description,
