@@ -17,8 +17,8 @@ app.use(cors());
 app.use('/api/plates', plateRoutes);
 app.use('/api/restaurants', restaurantRoutes);
 app.use('/api/users', userRoutes);
-app.use('/api/order', orderRoutes);
-app.use('/api/delivery', deliveryRoutes);
+app.use('/api/orders', orderRoutes);
+app.use('/api/deliverys', deliveryRoutes);
 
 app.listen(config.port, () => {
     console.log(`API rodando em ${config.url}`);
